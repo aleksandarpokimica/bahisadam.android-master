@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android.support.design="http://schemas.android.com/tools"
+    android:id="@+id/tabanim_maincontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/SkorAdamThemeTeam.ActionBarTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingRight="13dp"
+                android:paddingEnd="18dp"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/team_details_teamLogo"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/team_details_teamLogo"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:id="@+id/team_details_teamName" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teamCountryLeague"
+                    android:layout_below="@+id/team_details_teamName"
+                    android:layout_toRightOf="@+id/team_details_teamLogo"
+                    android:layout_toEndOf="@+id/team_details_teamLogo"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/teamCountryLeague"
+                    android:layout_toRightOf="@+id/team_details_teamLogo"
+                    android:layout_toEndOf="@+id/team_details_teamLogo"
+                    android:layout_marginTop="7dp">
+
+                    <FrameLayout
+                        android:layout_width="65dp"
+                        android:layout_height="17dp"
+                        android:background="@color/colorAccent"
+                        android:id="@+id/fav_layout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Takip Et"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp"
+                            android:id="@+id/tv_fav" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginLeft="3dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Takımı takip ederek tüm\n maçlar için uyarı alabilirsin"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="#ffffff"
+                        android:textSize="7dp" />
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/img_flag"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/team_details_teamName"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NavigationTabTeam"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0e7e8"
+        android:paddingBottom="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center">
+        <include
+            android:id="@+id/toolbar_bottom"
+            layout="@layout/toolbar_bottom"
+            />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,222 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="searchViewStyle">@style/customSearchView</item>
+
+    </style>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base" />
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccentDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textViewStyle">@style/MyMaterialTheme.textViewStyle</item>
+    </style>
+
+    <style name="MyMaterialThemeTeam" parent="MyMaterialTheme.Base.Team" />
+
+    <style name="MyMaterialTheme.Base.Team" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryTeam</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTeam</item>
+        <item name="colorAccent">@color/colorAccentTeam</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textViewStyle">@style/MyMaterialTheme.textViewStyle</item>
+    </style>
+
+    <style name="MyMaterialTheme.textViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">#4e5757</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="SkorAdamTheme" parent="TextAppearance.AppCompat">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccentDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SkorAdamThemeTeam.ActionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/colorPrimaryTeam</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTeam</item>
+        <item name="colorAccent">@color/colorAccentTeam</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SkorAdamTheme.ActionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/md_white_1000</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="NavigationTabTeam" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">5dp</item>
+        <item name="tabTextAppearance">@style/NavigationTabTextAppeareance</item>
+    </style>
+
+    <style name="NavigationTab" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">#fff</item>
+        <item name="tabIndicatorColor">#fff</item>
+        <item name="tabIndicatorHeight">5dp</item>
+        <item name="tabTextAppearance">@style/NavigationTabTextAppeareance</item>
+
+    </style>
+
+    <style name="NavigationTabTextAppeareance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#cbd3d2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="HomeNavigationTab" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">#fff</item>
+        <item name="tabIndicatorColor">#fff</item>
+        <item name="tabIndicatorHeight">5dp</item>
+
+        <item name="tabTextAppearance">@style/HomeNavigationTabTextAppeareance</item>
+
+
+    </style>
+
+    <style name="HomeNavigationTabTextAppeareance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#cbd3d2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="dialogTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dialog_margin</item>
+        <item name="android:layout_marginRight">@dimen/dialog_margin</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_margin</item>
+    </style>
+
+    <style name="tlTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/tl_textmargin</item>
+        <item name="android:textSize">@dimen/tl_textsize</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/tl_title_textcolor</item>
+    </style>
+
+    <style name="dialogButton">
+        <item name="android:background">@color/grass_green</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginTop">@dimen/dialog_button</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_button</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="NavigationDrawerStyle">
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="customSearchView" parent="Base.Widget.AppCompat.SearchView">
+        <item name="android:colorFocusedHighlight">@color/md_white_1000</item>
+        <item name="android:color">@color/md_white_1000</item>
+        <item name="android:background">@color/md_white_1000</item>
+    </style>
+
+    <style name="AndroidImageSlider_Corner_Oval_Orange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/indicator_corner_bg</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#f60</item>
+        <item name="unselected_color">#ffffff</item>
+        <item name="selected_width">6dp</item>
+        <item name="selected_height">6dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+
+    <style name="AndroidImageSlider_Attractive_Rect_Blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">rect</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#30CCE5</item>
+        <item name="unselected_color">#333333</item>
+        <item name="selected_width">13dp</item>
+        <item name="selected_height">4dp</item>
+        <item name="unselected_width">13dp</item>
+        <item name="unselected_height">4dp</item>
+    </style>
+
+    <style name="AndroidImageSlider_Magnifier_Oval_Black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#333333</item>
+        <item name="unselected_color">#33000000</item>
+        <item name="selected_width">8dp</item>
+        <item name="selected_height">8dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+
+    <style name="customTabText" parent="Base.Widget.AppCompat.ActionBar.TabText">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

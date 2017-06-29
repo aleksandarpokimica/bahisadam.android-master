@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bahisadam.view.PlayerDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="#9 Zlatan Ibrahimovic"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/player_details_playerLogo"
+        android:layout_below="@+id/tvPlayerName"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher"/>
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/player_details_playerLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:background="#444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/playerInfoContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:background="#EEE"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <TextView
+                            android:id="@+id/tvPlayerDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="Oyuncu Bilgisi"
+                            android:padding="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/team_details_teamLogo"
+                        android:src="@drawable/ic_launcher"
+                        android:layout_below="@+id/playerInfoContainer"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:id="@+id/tvPlayerCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Isvec"
+                        android:layout_below="@+id/playerInfoContainer"
+                        android:layout_toRightOf="@+id/team_details_teamLogo"
+                        android:layout_toEndOf="@+id/team_details_teamLogo"/>
+
+                    <TextView
+                        android:id="@+id/tvNationalTeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/team_details_teamLogo"
+                        android:layout_alignLeft="@+id/tvPlayerCountry"
+                        android:layout_alignStart="@+id/tvPlayerCountry"
+                        android:textSize="10dp"
+                        android:text="Milli Takim"/>
+
+                    <TextView
+                        android:id="@+id/tvFoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvNationalTeam"
+                        android:layout_marginTop="31dp"
+                        android:textSize="18dp"
+                        android:layout_toEndOf="@+id/team_details_teamLogo"
+                        android:layout_toRightOf="@+id/team_details_teamLogo"
+                        android:text="Sag"/>
+
+                    <TextView
+                        android:id="@+id/tvPreferredFoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:text="Tercih Ettigi Ayak"
+                        android:textSize="10dp"
+                        android:layout_below="@+id/tvFoot"
+                        android:layout_alignLeft="@+id/tvFoot"
+                        android:layout_alignStart="@+id/tvFoot"/>
+
+                    <TextView
+                        android:id="@+id/tvPlayerAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tvPlayerCountry"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18dp"
+                        android:text="35"/>
+
+                    <TextView
+                        android:id="@+id/tvAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tvNationalTeam"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="10dp"
+                        android:text="Yas"/>
+
+                    <TextView
+                        android:id="@+id/tvPlayerPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tvFoot"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18dp"
+                        android:text="Hucum"/>
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tvPreferredFoot"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="10dp"
+                        android:text="Posizyon"/>
+
+                    <TextView
+                        android:id="@+id/tvPlayerHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignTop="@+id/tvPlayerAge"
+                        android:textSize="18dp"
+                        android:text="1.84 cm"/>
+
+                    <TextView
+                        android:id="@+id/tvHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="Boy"
+                        android:layout_alignBaseline="@+id/tvAge"
+                        android:layout_alignBottom="@+id/tvAge"
+                        android:layout_alignLeft="@+id/tvPlayerWeight"
+                        android:layout_alignStart="@+id/tvPlayerWeight"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tvPlayerWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="81 kg"
+                        android:layout_alignBaseline="@+id/tvPlayerPosition"
+                        android:layout_alignBottom="@+id/tvPlayerPosition"
+                        android:layout_alignLeft="@+id/tvPlayerHeight"
+                        android:layout_alignStart="@+id/tvPlayerHeight"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="Kilo"
+                        android:layout_alignBaseline="@+id/textView15"
+                        android:layout_alignBottom="@+id/textView15"
+                        android:layout_alignLeft="@+id/tvHeight"
+                        android:layout_alignStart="@+id/tvHeight"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tvPreferredFoot"
+                        android:background="#EEE"
+                        android:orientation="horizontal"
+                        android:id="@+id/linearLayout">
+
+                        <TextView
+                            android:id="@+id/tvPlayerTeams"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="Oynadigi Takimlar"
+                            android:padding="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/linearLayout"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Yil"/>
+
+                    <TextView
+                        android:id="@+id/tvTeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvPreferredFoot"
+                        android:layout_alignStart="@+id/tvPreferredFoot"
+                        android:layout_below="@+id/linearLayout"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Takim"/>
+
+                    <TextView
+                        android:id="@+id/tvContract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/linearLayout"
+                        android:textSize="18dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Kontrat"/>
+
+                    <ListView
+                        android:id="@+id/lvPlayerRoles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tvYear"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+
+</RelativeLayout>

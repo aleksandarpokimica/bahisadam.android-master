@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prediction_row"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp" android:layout_height="30dp" android:gravity="center" android:layout_weight="1" android:layout_gravity="start">
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/match_date"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="30dp" android:gravity="start"  android:layout_gravity="center_vertical" android:layout_weight="3" android:orientation="vertical">
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/home_team"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/away_team"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="30dp" android:gravity="center" android:layout_gravity="start" android:layout_weight="1" android:orientation="vertical">
+            <TextView
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/home_goals"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/away_goals"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="30dp" android:gravity="center" android:layout_gravity="start" android:layout_weight="1" android:orientation="vertical">
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/half_time_home_score"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/half_time_away_score"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="30dp" android:gravity="center" android:layout_weight="1" android:orientation="vertical">
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/odd"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="30dp" android:gravity="center" android:layout_weight="1" android:orientation="vertical">
+            <TextView
+                    android:textColor="@color/font_color"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/forecast"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="30dp" android:gravity="center" android:layout_weight="1" android:orientation="vertical">
+            <TextView
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/success"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf"/>
+</RelativeLayout>

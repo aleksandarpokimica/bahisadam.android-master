@@ -1,0 +1,1265 @@
+{
+  "isSuccess": true,
+  "errorType": "None",
+  "data": {
+    "teams": [
+      {
+        "_id": 2012,
+        "team_name": "Los Angeles Galaxy",
+        "team_name_tr": "Los Angeles Galaxy",
+        "country_id": 68,
+        "active": "true",
+        "contract_type": "player"
+      }
+    ],
+    "roles": [
+      {
+        "type": "player",
+        "active": "true",
+        "team": {
+          "_id": 2012,
+          "team_name": "Los Angeles Galaxy",
+          "team_name_tr": "Los Angeles Galaxy",
+          "country_id": 68
+        },
+        "start_date": "2016-01-27",
+        "jersey_number": 3
+      },
+      {
+        "type": "player",
+        "active": "false",
+        "team": {
+          "_id": 160,
+          "team_name": "Roma",
+          "team_name_tr": "Roma",
+          "country_id": 5
+        },
+        "start_date": "2014-07-07",
+        "end_date": "2016-01-26",
+        "jersey_number": 3
+      },
+      {
+        "type": "player",
+        "active": "false",
+        "team": {
+          "_id": 111,
+          "team_name": "Chelsea",
+          "team_name_tr": "Chelsea",
+          "country_id": 2
+        },
+        "start_date": "2006-08-31",
+        "end_date": "2014-07-06",
+        "jersey_number": 3
+      },
+      {
+        "type": "on_loan",
+        "active": "false",
+        "team": {
+          "_id": 99,
+          "team_name": "Crystal Palace",
+          "team_name_tr": "Crystal Palace",
+          "country_id": 2
+        },
+        "start_date": "2000-02-25",
+        "end_date": "2000-05-08"
+      },
+      {
+        "type": "player",
+        "active": "false",
+        "team": {
+          "_id": 80,
+          "team_name": "Arsenal",
+          "team_name_tr": "Arsenal",
+          "country_id": 2
+        },
+        "start_date": "1999-07-01",
+        "end_date": "2006-08-30",
+        "jersey_number": 3
+      }
+    ],
+    "statistics": {
+      "totals": {
+        "matches_played": 436,
+        "substituted_in": 18,
+        "substituted_out": 34,
+        "goals_scored": 9,
+        "assists": 23,
+        "own_goals": 1,
+        "yellow_cards": 61,
+        "yellow_red_cards": 2,
+        "red_cards": 1,
+        "last_event_time": "2017-06-25T04:21:41+00:00"
+      },
+      "team_statistics": [
+        {
+          "type": "",
+          "team": {
+            "_id": 811,
+            "team_name": "Rosenborg",
+            "team_name_tr": "Rosenborg",
+            "country_id": 42
+          },
+          "seasons": [
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:603",
+                "name": "UEFA Şampiyonlar Ligi 07/08"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 0,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2007-11-28T18:44:05+00:00"
+              }
+            }
+          ],
+          "start_date": "",
+          "isNational": false
+        },
+        {
+          "type": "",
+          "team": {
+            "_id": 2012,
+            "team_name": "Los Angeles Galaxy",
+            "team_name_tr": "Los Angeles Galaxy",
+            "country_id": 68
+          },
+          "seasons": [
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:38738",
+                "name": "Major League Soccer 2017"
+              },
+              "tournament": {
+                "_id": 48,
+                "league_name": "USA Major League Soccer",
+                "league_name_tr": " ABD Major Lig",
+                "country_code": "us"
+              },
+              "statistics": {
+                "matches_played": 13,
+                "substituted_in": 0,
+                "substituted_out": 2,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 1,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2017-06-25T04:21:41+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:12350",
+                "name": "Major League Soccer 2016"
+              },
+              "tournament": {
+                "_id": 48,
+                "league_name": "USA Major League Soccer",
+                "league_name_tr": " ABD Major Lig",
+                "country_code": "us"
+              },
+              "statistics": {
+                "matches_played": 29,
+                "substituted_in": 1,
+                "substituted_out": 1,
+                "goals_scored": 1,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 4,
+                "yellow_red_cards": 1,
+                "red_cards": 1,
+                "last_event_time": "2016-11-06T18:34:19+00:00"
+              }
+            }
+          ],
+          "start_date": "2016-01-27T00:00:00.000Z",
+          "isNational": false
+        },
+        {
+          "type": "",
+          "team": {
+            "_id": 160,
+            "team_name": "Roma",
+            "team_name_tr": "Roma",
+            "country_id": 5
+          },
+          "seasons": [
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:8618",
+                "name": "Serie A 14/15"
+              },
+              "tournament": {
+                "_id": 13,
+                "league_name": "Italy Serie A",
+                "league_name_tr": "İtalya Serie A",
+                "country_code": "it"
+              },
+              "statistics": {
+                "matches_played": 11,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-05-31T18:17:03+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:8568",
+                "name": "Coppa Italia 14/15"
+              },
+              "tournament": {
+                "_id": 110,
+                "league_name": "Italy - Cup",
+                "league_name_tr": "İtalya Kupası",
+                "country_code": "it"
+              },
+              "statistics": {
+                "matches_played": 2,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2015-02-03T19:24:42+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:8226",
+                "name": "UEFA Şampiyonlar Ligi 14/15"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 3,
+                "substituted_in": 1,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2014-11-25T16:18:55+00:00"
+              }
+            }
+          ],
+          "start_date": "2014-07-07T00:00:00.000Z",
+          "isNational": false
+        },
+        {
+          "type": "",
+          "team": {
+            "_id": 111,
+            "team_name": "Chelsea",
+            "team_name_tr": "Chelsea",
+            "country_id": 2
+          },
+          "seasons": [
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:6311",
+                "name": "Premier Lig 13/14"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 17,
+                "substituted_in": 2,
+                "substituted_out": 2,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2014-05-11T13:20:48+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:4710",
+                "name": "Premier Lig 12/13"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 31,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 1,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 3,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-05-19T14:18:35+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:3391",
+                "name": "Premier Lig 11/12"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 32,
+                "substituted_in": 1,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 6,
+                "own_goals": 0,
+                "yellow_cards": 7,
+                "yellow_red_cards": 1,
+                "red_cards": 0,
+                "last_event_time": "2012-04-29T12:05:43+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:2746",
+                "name": "Premier Lig 10/11"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 38,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 4,
+                "own_goals": 0,
+                "yellow_cards": 4,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-05-22T14:44:45+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:2139",
+                "name": "Premier Lig 09/10"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 27,
+                "substituted_in": 2,
+                "substituted_out": 4,
+                "goals_scored": 4,
+                "assists": 3,
+                "own_goals": 0,
+                "yellow_cards": 4,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2010-05-09T16:50:35+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:1544",
+                "name": "Premier Lig 08/09"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 34,
+                "substituted_in": 1,
+                "substituted_out": 2,
+                "goals_scored": 1,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 5,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2009-05-24T16:45:13+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:581",
+                "name": "Premier Lig 07/08"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 28,
+                "substituted_in": 1,
+                "substituted_out": 1,
+                "goals_scored": 1,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 4,
+                "yellow_red_cards": 0,
+                "red_cards": 1,
+                "last_event_time": "2008-05-11T13:39:16+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:4",
+                "name": "Premier Lig 06/07"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 23,
+                "substituted_in": 1,
+                "substituted_out": 3,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 4,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2007-05-06T14:33:44+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:6301",
+                "name": "UEFA Süper Kupa 2013"
+              },
+              "tournament": {
+                "_id": 54,
+                "league_name": "UEFA Super Cup",
+                "league_name_tr": "UEFA Süper Kupa",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-08-30T21:15:00+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:4816",
+                "name": "UEFA Süper Kupa 2012"
+              },
+              "tournament": {
+                "_id": 54,
+                "league_name": "UEFA Super Cup",
+                "league_name_tr": "UEFA Süper Kupa",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-08-31T20:32:41+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:6359",
+                "name": "UEFA Şampiyonlar Ligi 13/14"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 5,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2014-04-30T19:56:40+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:6295",
+                "name": "Lig Kupası 13/14"
+              },
+              "tournament": {
+                "_id": 60,
+                "league_name": "England League Trophy",
+                "league_name_tr": "İngiltere Lig Kupası",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-12-17T18:56:24+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:6871",
+                "name": "Federasyon Kupası 13/14"
+              },
+              "tournament": {
+                "_id": 53,
+                "league_name": "England - FA Cup ",
+                "league_name_tr": "İngiltere FA Cup ",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 2,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2014-01-26T14:46:19+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:5413",
+                "name": "Federasyon Kupası 12/13"
+              },
+              "tournament": {
+                "_id": 53,
+                "league_name": "England - FA Cup ",
+                "league_name_tr": "İngiltere FA Cup ",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 5,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-04-01T11:51:38+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:4788",
+                "name": "UEFA Şampiyonlar Ligi 12/13"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 5,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-12-05T21:05:33+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:4790",
+                "name": "UEFA Avrupa Ligi 12/13"
+              },
+              "tournament": {
+                "_id": 17,
+                "league_name": "Europe League",
+                "league_name_tr": "Avrupa Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 3,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-05-15T17:54:36+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:4706",
+                "name": "Lig Kupası 12/13"
+              },
+              "tournament": {
+                "_id": 60,
+                "league_name": "England League Trophy",
+                "league_name_tr": "İngiltere Lig Kupası",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 3,
+                "substituted_in": 1,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-01-23T21:30:17+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:3402",
+                "name": "UEFA Şampiyonlar Ligi 11/12"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 12,
+                "substituted_in": 1,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 3,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-05-19T20:22:55+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:3967",
+                "name": "Federasyon Kupası 11/12"
+              },
+              "tournament": {
+                "_id": 53,
+                "league_name": "England - FA Cup ",
+                "league_name_tr": "İngiltere FA Cup ",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 3,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-05-05T15:59:23+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:3078",
+                "name": "Federasyon Kupası 10/11"
+              },
+              "tournament": {
+                "_id": 53,
+                "league_name": "England - FA Cup ",
+                "league_name_tr": "İngiltere FA Cup ",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 2,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-02-19T12:00:13+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:2764",
+                "name": "UEFA Şampiyonlar Ligi 10/11"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 7,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-04-12T17:44:53+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:1825",
+                "name": "UEFA Şampiyonlar Ligi 09/10"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 4,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2009-11-03T19:07:26+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:2460",
+                "name": "Federasyon Kupası 09/10"
+              },
+              "tournament": {
+                "_id": 53,
+                "league_name": "England - FA Cup ",
+                "league_name_tr": "İngiltere FA Cup ",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2010-05-15T13:30:52+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:1859",
+                "name": "Federasyon Kupası 08/09"
+              },
+              "tournament": {
+                "_id": 53,
+                "league_name": "England - FA Cup ",
+                "league_name_tr": "İngiltere FA Cup ",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 2,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2009-05-30T13:36:23+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:1664",
+                "name": "UEFA Şampiyonlar Ligi 08/09"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 8,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 3,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2009-05-06T17:47:10+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:585",
+                "name": "Carling Kupası 07/08"
+              },
+              "tournament": {
+                "_id": 60,
+                "league_name": "England League Trophy",
+                "league_name_tr": "İngiltere Lig Kupası",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 1,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2008-01-23T19:45:14+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:603",
+                "name": "UEFA Şampiyonlar Ligi 07/08"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 10,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2008-05-21T17:36:49+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:15",
+                "name": "UEFA Şampiyonlar Ligi 06/07"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 9,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 2,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2007-05-01T19:14:10+00:00"
+              }
+            }
+          ],
+          "start_date": "2006-08-31T00:00:00.000Z",
+          "isNational": false
+        },
+        {
+          "type": "",
+          "team": {
+            "_id": 80,
+            "team_name": "Arsenal",
+            "team_name_tr": "Arsenal",
+            "country_id": 2
+          },
+          "seasons": [
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:3",
+                "name": "Premier Lig 05/06"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 11,
+                "substituted_in": 2,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 3,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2006-05-07T13:27:00+00:00"
+              }
+            },
+            {
+              "type": "League",
+              "season": {
+                "id": "sr:season:2",
+                "name": "Premier Lig 04/05"
+              },
+              "tournament": {
+                "_id": 5,
+                "league_name": "England -  Premier League",
+                "league_name_tr": "İngiltere Premier Ligi",
+                "country_code": "gb"
+              },
+              "statistics": {
+                "matches_played": 0,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 1,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2005-02-05T17:47:15+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:14",
+                "name": "UEFA Şampiyonlar Ligi 05/06"
+              },
+              "tournament": {
+                "_id": 16,
+                "league_name": "Champions League",
+                "league_name_tr": "Şampiyonlar Ligi",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 3,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2006-05-17T18:05:50+00:00"
+              }
+            }
+          ],
+          "start_date": "1999-07-01T00:00:00.000Z",
+          "isNational": false
+        }
+      ],
+      "national_team_statistics": [
+        {
+          "type": "",
+          "team": {
+            "_id": 875,
+            "team_name": "England",
+            "team_name_tr": "İngiltere",
+            "country_id": 44
+          },
+          "seasons": [
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:3657",
+                "name": "Dünya Şampiyonası Elemeler,Avrupa 2012-2013"
+              },
+              "tournament": {
+                "_id": 64,
+                "league_name": "WC Qualification Europe",
+                "league_name_tr": "Dünya Kupası Elemeleri - Avrupa ",
+                "country_code": "wo"
+              },
+              "statistics": {
+                "matches_played": 4,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2013-09-10T18:04:11+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:4136",
+                "name": "Avrupa Şampiyonası 2012"
+              },
+              "tournament": {
+                "_id": 38,
+                "league_name": "UEFA Euro 2016",
+                "league_name_tr": "UEFA Euro 2016",
+                "country_code": "eu"
+              },
+              "statistics": {
+                "matches_played": 4,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2012-06-24T17:55:48+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:2613",
+                "name": "Avrupa Kupası 2012,Elemeler"
+              },
+              "tournament": {
+                "_id": 289,
+                "league_name": "European Championship Qualification",
+                "league_name_tr": "Euro 2016 Avrupa Elemeleri",
+                "country_code": "wo"
+              },
+              "statistics": {
+                "matches_played": 8,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 1,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2011-10-07T18:40:56+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:1152",
+                "name": "Dünya Kupası Elemeleri 2010, Avrupa (UEFA)"
+              },
+              "tournament": {
+                "_id": 64,
+                "league_name": "WC Qualification Europe",
+                "league_name_tr": "Dünya Kupası Elemeleri - Avrupa ",
+                "country_code": "wo"
+              },
+              "statistics": {
+                "matches_played": 8,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2009-10-10T15:42:06+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:36",
+                "name": "Euro Cup 2008 Elemeleri"
+              },
+              "tournament": {
+                "_id": 289,
+                "league_name": "European Championship Qualification",
+                "league_name_tr": "Euro 2016 Avrupa Elemeleri",
+                "country_code": "wo"
+              },
+              "statistics": {
+                "matches_played": 4,
+                "substituted_in": 0,
+                "substituted_out": 1,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 1,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2007-11-21T19:20:37+00:00"
+              }
+            },
+            {
+              "type": "Cup",
+              "season": {
+                "id": "sr:season:25",
+                "name": "Dünya Kupası Elemeleri 2006, Avrupa (UEFA)"
+              },
+              "tournament": {
+                "_id": 64,
+                "league_name": "WC Qualification Europe",
+                "league_name_tr": "Dünya Kupası Elemeleri - Avrupa ",
+                "country_code": "wo"
+              },
+              "statistics": {
+                "matches_played": 2,
+                "substituted_in": 0,
+                "substituted_out": 0,
+                "goals_scored": 0,
+                "assists": 0,
+                "own_goals": 0,
+                "yellow_cards": 0,
+                "yellow_red_cards": 0,
+                "red_cards": 0,
+                "last_event_time": "2005-09-07T18:28:56+00:00"
+              }
+            }
+          ],
+          "start_date": "",
+          "isNational": true
+        }
+      ]
+    },
+    "_id": "sr:player:2",
+    "name": "Cole, Ashley",
+    "nationality": "İngiltere",
+    "height": 176,
+    "weight": 67,
+    "birthdate": "1980-12-20",
+    "type": "defender",
+    "preferred_foot": "left",
+    "updated_date": "2017-06-26T19:44:35.827Z",
+    "$setOnInsert": {
+      "__v": 0
+    },
+    "age": 37
+  }
+}

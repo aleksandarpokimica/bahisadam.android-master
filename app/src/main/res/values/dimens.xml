@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="content_inset_half">8dp</dimen>
+    <dimen name="content_inset">2dp</dimen>
+    <dimen name="grid_span_margen_top">5dp</dimen>
+    <dimen name="grid_span_margen">10dp</dimen>
+    <integer name="grid_span_1">1</integer>
+    <integer name="grid_span_2">2</integer>
+    <integer name="grid_span_3">3</integer>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="padding_item">2dp</dimen>
+    <dimen name="header_padding_top_bottom">8dp</dimen>
+    <dimen name="iddaa_circle_size">40dp</dimen>
+    <dimen name="padding_top_iddaa">8dp</dimen>
+    <integer name="itemsWeightLeagueStangings">1</integer>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="dialog_margin">24dp</dimen>
+    <dimen name="dialog_button">8dp</dimen>
+    <dimen name="tl_textsize">13sp</dimen>
+    <dimen name="tl_textmargin">2sp</dimen>
+    <dimen name="default_margin">4dp</dimen>
+    <dimen name="home_page_top_bottom_margin">6dp</dimen>
+    <dimen name="default_horizontal_margin">8dp</dimen>
+    <dimen name="img_size">18dp</dimen>
+</resources>

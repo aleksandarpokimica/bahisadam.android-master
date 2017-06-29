@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:id="@+id/group_feature">
+        <item
+                android:id="@+id/news"
+                android:icon="@drawable/news"
+                android:title="@string/news" />
+        <item
+            android:id="@+id/home_page"
+            android:icon="@drawable/allmatches"
+            android:title="@string/all_matches" >
+        </item>
+        <item
+            android:id="@+id/forecast_league"
+            android:icon="@drawable/predictionleague"
+            android:title="@string/tahmin_ligi" />
+        <item
+            android:id="@+id/iddaa_bulletin"
+            android:icon="@drawable/iddaa"
+            android:title="@string/iddaa_bulteni" />
+        <item
+            android:id="@+id/transfers"
+            android:icon="@drawable/news"
+            android:title="@string/transfers" />
+        <item
+                android:id="@+id/privacy"
+                android:icon="@drawable/news"
+                android:title="@string/privacy_agreement" />
+    </group>
+</menu>

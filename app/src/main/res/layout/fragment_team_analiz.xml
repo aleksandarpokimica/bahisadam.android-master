@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f7f7f7"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_padding_top_bottom"
+            android:layout_marginBottom="@dimen/header_padding_top_bottom"
+            android:textColor="@color/headerTextColor"
+            android:text="@string/minutes_title"
+            android:id="@+id/textView"
+            android:layout_marginLeft="10dp"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scored"
+                    android:id="@+id/textView2"
+                    android:textSize="14dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#31d15e"
+                    android:layout_marginTop="10dp"></FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:paddingRight="23dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goal"
+                    android:id="@+id/textView4"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0 - 15"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minutes_arrows"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/tv_goal_scored_1"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15 - 30"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minutes_arrows"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/tv_goal_scored_2"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30 - 45"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minutes_arrows"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/tv_goal_scored_3"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="45 - 60"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minutes_arrows"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/tv_goal_scored_4"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="60 - 75"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minutes_arrows"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/tv_goal_scored_5"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="75 - 90"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minutes_arrows"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/tv_goal_scored_6"
+                    android:layout_weight="1"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/goal_minutes_icon" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/received"
+                        android:textSize="14dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp" />
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="#ef2e32"
+                        android:layout_marginTop="10dp"></FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/min"
+                        android:layout_weight="1"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:paddingRight="23dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goal"
+                        android:layout_weight="1"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0 - 15"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minutes_arrows_red"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_goal_rec_1"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="15 - 30"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minutes_arrows_red"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_goal_rec_2"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="30 - 45"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minutes_arrows_red"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_goal_rec_3"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45 - 60"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minutes_arrows_red"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_goal_rec_4"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="60 - 75"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minutes_arrows_red"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_goal_rec_5"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="75 - 90"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minutes_arrows_red"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_goal_rec_6"
+                        android:layout_weight="1"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f7f7f7"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_padding_top_bottom"
+            android:layout_marginBottom="@dimen/header_padding_top_bottom"
+            android:textColor="@color/headerTextColor"
+            android:text="@string/season_stats"
+            android:id="@+id/textView5"
+            android:layout_marginLeft="10dp"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/team_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/team_name"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/season"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/homeChartContainer"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center">
+
+                    <com.txusballesteros.widgets.FitChart
+                        android:id="@+id/chartPos"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:animationMode="overdraw"
+                        app:strokeSize="4dp"
+                        app:valueStrokeColor="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_pos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxWidth="100dp"
+                            android:textColor="#212121"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/possession"
+                    android:id="@+id/textView9"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goals_scored"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_scored"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goals_received"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_received"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goals_scored_by_foot"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_scored_foot"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goals_scored_by_head"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_scored_head"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_shots"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_shots_total"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shots_on_target"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_shots_on_target"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shots_blocked"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_shots_off_target"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_save"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/freekick"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_freekick"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/corner"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tv_corner"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#88888888"
+            android:layout_marginTop="5dp"></FrameLayout>
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

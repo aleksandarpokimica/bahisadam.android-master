@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:orientation="horizontal" android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/padding_item"
+                   android:layout_marginTop="@dimen/padding_item">
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:orientation="horizontal" android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="@dimen/padding_item"
+                   android:layout_marginTop="@dimen/padding_item">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/padding_item"
+                      android:layout_marginTop="@dimen/padding_item">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/similar_match_home_team"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/similar_match_home_score"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:orientation="horizontal" android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="@dimen/padding_item"
+                   android:layout_marginTop="@dimen/padding_item">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/padding_item"
+                      android:layout_marginTop="@dimen/padding_item">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/similar_match_away_team"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/similar_match_away_score"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

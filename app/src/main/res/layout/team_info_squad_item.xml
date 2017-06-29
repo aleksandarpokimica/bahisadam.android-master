@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/layout">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/image_squad"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kit_striped" />
+
+            <ImageView
+                android:id="@+id/image_squad1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kit_striped1" />
+
+            <ImageView
+                android:id="@+id/image_squad2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kit_striped2" />
+
+            <TextView
+                android:id="@+id/text_view_squad_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginTop="6dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_squad_name"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:gravity="bottom" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_country_flag"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/turkish_flag" />
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/goal_section"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/fball" />
+
+            <TextView
+                android:id="@+id/text_view_squad_goals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d2d6db" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bahisadam.fragment.LiveFragment">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/content_live" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/no_live_match" android:visibility="gone">
+            <ImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/pitch"
+                    android:src="@drawable/pitch"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:layout_below="@+id/pitch"
+                      android:textAlignment="center"
+                      android:text="@string/no_live_match"
+            />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center">
+            <include
+                android:id="@+id/toolbar_bottom"
+                layout="@layout/toolbar_bottom"
+                />
+        </LinearLayout>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

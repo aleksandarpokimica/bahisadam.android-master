@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="1dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPaddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eef4f4"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/header_padding_top_bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/header_padding_top_bottom"
+                android:text="@string/goalAverage"
+                android:textColor="#2b313d" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dfdfdf" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/vertical_dots"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/vertical_dots" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/vertical_dots"
+                android:layout_toRightOf="@id/vertical_dots"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/homeTeamLogo"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp" />
+
+                        <TextView
+                            android:id="@+id/goalHomeTeam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/homeTeamText"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/homeTeam" />
+
+                        <ImageView
+                            android:id="@+id/homeDoubleArrow"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@id/homeTeamText"
+                            android:layout_toRightOf="@id/homeTeamText"
+                            android:src="@drawable/fork" />
+
+                        <TextView
+                            android:id="@+id/goalHomeAGTitle"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@id/homeDoubleArrow"
+                            android:layout_toRightOf="@id/homeDoubleArrow"
+                            android:text="@string/attigi" />
+
+                        <TextView
+                            android:id="@+id/goalHomeYGTitle"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/goalHomeAGTitle"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@id/homeDoubleArrow"
+                            android:layout_toRightOf="@id/homeDoubleArrow"
+                            android:text="@string/yedigi" />
+
+                        <TextView
+                            android:id="@+id/goalHomeAG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@id/goalHomeAGTitle"
+                            android:layout_toRightOf="@id/goalHomeAGTitle"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/goalHomeYG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/goalHomeAGTitle"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@id/goalHomeYGTitle"
+                            android:layout_toRightOf="@id/goalHomeYGTitle"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#dfdfdf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/awayTeamLogo"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp" />
+
+                        <TextView
+                            android:id="@+id/goalAwayTeam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:ellipsize="end"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/awayTeamText"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/awayTeam" />
+
+                        <ImageView
+                            android:id="@+id/awayDoubleArrow"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@id/awayTeamText"
+                            android:layout_toRightOf="@id/awayTeamText"
+                            android:src="@drawable/fork" />
+
+                        <TextView
+                            android:id="@+id/goalAwayAGTitle"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@id/awayDoubleArrow"
+                            android:layout_toRightOf="@id/awayDoubleArrow"
+                            android:text="@string/attigi" />
+
+                        <TextView
+                            android:id="@+id/goalAwayYGTitle"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/goalAwayAGTitle"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@id/awayDoubleArrow"
+                            android:layout_toRightOf="@id/awayDoubleArrow"
+                            android:text="@string/yedigi" />
+
+                        <TextView
+                            android:id="@+id/goalAwayAG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@id/goalAwayAGTitle"
+                            android:layout_toRightOf="@id/goalAwayAGTitle"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/goalAwayYG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/goalAwayAGTitle"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@id/goalAwayYGTitle"
+                            android:layout_toRightOf="@id/goalAwayYGTitle"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

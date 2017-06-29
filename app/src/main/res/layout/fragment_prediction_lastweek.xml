@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                    android:elevation="1dp"
+                    android:background="@color/header_color"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="5dp"
+                    android:layout_height="30sp"
+                    android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView
+                            style="@style/tlTextStyle"
+                            android:paddingLeft="3dp"
+                            android:gravity="left"
+                            android:text="#"
+                    />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="9">
+                    <TextView
+                            style="@style/tlTextStyle"
+                            android:text="@string/tl_tittle_uzman"
+                            android:gravity="left"
+                    />
+
+                    <TextView
+                            style="@style/tlTextStyle"
+                            android:text="@string/tl_tittle_totalmatch"
+                            android:gravity="left"
+                    />
+
+                    <TextView
+                            style="@style/tlTextStyle"
+                            android:text="@string/tl_tittle_basariorani"
+                            android:gravity="right"
+                    />
+
+                    <TextView
+                            style="@style/tlTextStyle"
+                            android:text="@string/tl_tittle_skor"
+                            android:gravity="center"
+                    />
+                </LinearLayout>
+                <LinearLayout android:layout_weight="0.5" android:layout_width="0dp" android:layout_height="wrap_content">
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tl_recyclerview"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
