@@ -55,7 +55,7 @@ public class LeagueDetailsActivity extends BaseActivity  {
         String icon = intent.getStringExtra(ARG_LEAGUE_ICON);
         if(Constant.TURKEY_SUPER_LEAGUE == mLeagueId)
             setActiveToolbarItem(4);
-        ButterKnife.bind(this);
+        ButterKnife.bind(this);// when u bind class to view it automatically assigns fields. you don t need to findById then cast
         if(leagueName != null){
             leagueNameTV.setText(leagueName);
         }

@@ -4,22 +4,22 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by Aleksandar on 6/28/2017.
+ * Created by Aleksandar on 7/3/2017.
  */
 
-public class PlayerRolesModelTeam {
+public class PlayerStatsTeamModelTeam {
 
     @SerializedName("country_id")
     @Expose
-    public int prmCountryId;
+    public String countryId;
     @SerializedName("team_name_tr")
     @Expose
-    public String prmTeamNameTr;
+    public String teamNameTr;
     @SerializedName("team_name")
     @Expose
-    public String prmTeamName;
+    public String teamName;
     @SerializedName("_id")
     @Expose
-    public int prmId;
+    public String id;
 
 }

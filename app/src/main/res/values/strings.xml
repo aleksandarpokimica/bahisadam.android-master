@@ -44,7 +44,22 @@
     <string name="standings">Puan/Fiks.</string>
     <string name="turkey">Turkey</string>
 
-    <string name="player_Information">Kisisel Bilgiler</string>
+    <string name="personal_Information">Kişisel Bilgiler</string>
+    <string name="player_Information">Oyuncu Bilgisi</string>
+    <string name="national_team">Milli Takım</string>
+    <string name="player_age">Yaş</string>
+    <string name="player_height">Boy</string>
+    <string name="preferred_foot">Tercih Ettigi Ayak</string>
+    <string name="player_position">Pozisyon</string>
+    <string name="player_weight">Kilo</string>
+    <string name="teams_played">Oynadigi Takimlar</string>
+    <string name="teams_played_year">Yil</string>
+    <string name="teams_played_team">Takim</string>
+    <string name="teams_played_contract">Kontrat</string>
+    <string name="career_statistics">Kariyer İstatistikleri</string>
+    <string name="match">Maç</string>
+    <string name="league_year">Lig/Yil</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -49,7 +49,7 @@ public interface RestClient {
     Call<BaseResponse<TeamStats>> teamStatsByLeague(@Path("teamId") Integer teamId, @Path("leagueId") Integer leagueId);
     @GET("team/detail/{teamId}")
     Call<TeamDetailResponseModel> teamDetails(@Path("teamId") Integer teamId);
-    @GET("player/detail/{playerId}")
+    @GET("player/profile/{playerId}")
     Call<PlayerResponseModel> playerDetails(@Path("playerId") String playerId);
     @GET("fixture/{leagueId}/{round}")
     Call<MatchPOJO.Fixture> fixture(@Path("leagueId") Integer leagueId,@Path("round") Integer roound);

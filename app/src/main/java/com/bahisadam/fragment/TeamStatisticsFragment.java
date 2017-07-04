@@ -46,13 +46,13 @@ public class TeamStatisticsFragment extends Fragment {
     private ArrayList<GoalTimeStatistics> mGoalTimeStatistics = new ArrayList<>();
     private RecyclerView mRecyclerView;
 
-public static TeamStatisticsFragment newInstance(ArrayList<TeamPlayerStats> players){
-    TeamStatisticsFragment fragment= new TeamStatisticsFragment();
-    Bundle args = new Bundle();
-    args.putParcelableArrayList(ARG_TEAM_STATS, players);
-    fragment.setArguments(args);
-    return fragment;
-}
+    public static TeamStatisticsFragment newInstance(ArrayList<TeamPlayerStats> players){
+        TeamStatisticsFragment fragment = new TeamStatisticsFragment();
+        Bundle args = new Bundle();
+        args.putParcelableArrayList(ARG_TEAM_STATS, players);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

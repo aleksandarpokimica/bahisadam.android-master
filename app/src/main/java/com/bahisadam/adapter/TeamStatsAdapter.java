@@ -38,7 +38,7 @@ public class TeamStatsAdapter extends RecyclerView.Adapter<CardHolderBase> {
     public void clear(){
         mList.clear();
     }
-    public void add(List<PlayerStatistics>  sublist, String statType){
+    public void add(List<PlayerStatistics> sublist, String statType){
         this.statType = statType;
         mList.addAll(sublist);
     }
@@ -52,8 +52,7 @@ public class TeamStatsAdapter extends RecyclerView.Adapter<CardHolderBase> {
 
         int layout = R.layout.stats_item_new;
 
-        View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(layout, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(layout, parent, false);
         return new StatsVH(itemView);
 
     }

@@ -12,13 +12,14 @@ import java.util.List;
  */
 
 public class PlayerResponseModel {
-    @JsonProperty("isSuccess")
+    @SerializedName("isSuccess")
+    @Expose
     private Boolean isSuccess;
-    @JsonProperty("errorType")
-    private String error;
-    @JsonProperty("error")
+    @SerializedName("errorType")
+    @Expose
     private String errorType;
-    @JsonProperty("data")
+    @SerializedName("data")
+    @Expose
     private PlayerModel data;
     /*@SerializedName("roles")
     @Expose
@@ -36,10 +37,6 @@ public class PlayerResponseModel {
         return data;
     }
 
-    /*public List<PlayerRolesModel> getPlayerRoles() {
-        return playerRoles;
-    }*/
-
     public void setSuccess(boolean success) {
         isSuccess = success;
     }
@@ -51,8 +48,4 @@ public class PlayerResponseModel {
     public void setData(PlayerModel data) {
         this.data = data;
     }
-
-    /*public void setPlayerRoles(List<PlayerRolesModel> playerRoles) {
-        this.playerRoles = playerRoles;
-    }*/
 }
